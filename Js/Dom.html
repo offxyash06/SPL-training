@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1 id="one"></h1>
+     <h2 class="Two"></h2>
+     <h3></h3>
+    <script>
+         let All = document.querySelector("h3");
+
+         let three = document.getElementsByTagName("h3")[0];
+         three.innerHTML="Resorts";
+         three.style.color="Red";
+
+         let Two = document.getElementsByClassName("Two")[0];
+         Two.innerHTML="Hotel Management";
+         Two.style.color="Green";
+
+         let name = document.getElementById("one");
+         name.innerHTML="YP Industries";
+         name.style.color="blue";
+         console.log(name.textContent);
+    </script>
+
+</body>
+</html>
